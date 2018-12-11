@@ -31,7 +31,7 @@ class PigLatinizer
   def switch_consonants(word)
     vowels = ["a", "e", "i", "o", "u"]
     origin_str = word.split('')
-    final = word.split('').collect do |c|
+    word.split('').collect do |c|
       if vowels.include?(c)
         break
       else
